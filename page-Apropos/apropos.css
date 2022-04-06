@@ -1,0 +1,245 @@
+
+@font-face{
+    font-family: 'font spiderman';
+    src: url(./../Assets/font/Far-From\ Homecoming\ Updated.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+/* barre de navigation */
+.navbar{
+    background-color: #B11313;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    min-width: 1400px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-list{
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-left: 80px;
+}
+
+/* Fin barre de navigation */
+
+.spiderman{
+    background-image: url(./../Assets/Illustration/img5.png);
+    background-color: #F1C530;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.spider h1{
+    font-size: 5em;
+    font-family: 'Spider';
+    font-weight: lighter;
+}
+
+.méchant p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.ennemi{
+    background-color: #F1C530;
+    padding-top: 100px;
+}
+
+/* div antenne */
+.antenne{
+    background-color: #B11313;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.antenne p{
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+}
+.leftantenne img{
+    padding-top: 3%;
+}
+.leftantenne h1{
+    font-family: 'font spiderman';
+}
+.rightantenne{
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.rightantenne input{
+    width: 400px;
+    height: 30px;
+    background-color: inherit;
+    border: 1px solid #ffff;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+.rightantenne input::placeholder{
+    color: #ffff;
+    padding-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+    
+}
+
+
+.rightantenne textarea{
+    padding: 20px;
+    background-color: inherit;
+    border: 1px solid #ffff;
+    border-radius: 20px;
+    margin-bottom: 7%;
+}
+.rightantenne textarea::placeholder{
+    color: #ffff;
+}
+.rightantenne button{
+    width: 150px;
+    height: 50px;
+    border: 1px solid #ffff;
+    border-radius: 15px;
+    background-color: inherit;
+    color: #ffff;
+    margin-left: 20%;
+}
+
+/* section marvel */
+.marvel{
+    background-color:#114C92;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  
+}
+.marvel h1{
+    font-family: 'font spiderman';
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+.leftmarvel p{
+    margin:0;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+}
+.leftmarvel, .rightmarvel{
+    width: 600px;
+}
+.rightmarvel p{
+    margin-top: 0;
+}
+.text p{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+}
+.text ul{
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+}
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button button{
+    border: 1px solid #ffff;
+    color: #ffff;
+    background-color: inherit;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+.bottommarvel h4{
+    font-family: 'Montserrat', sans-serif;
+    size: 14px;
+    margin-left: 5%;
+}
+
+/* footer */
+footer {
+    height: auto;
+    width: 100%;
+    min-width: 500px;
+    min-height: 300px;
+    text-align: center;
+    padding: 30px;
+    background: #000000;
+    color: #ffffff;
+  }
+  footer .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  footer .item {
+    order: 1;
+  }
+  footer .none {
+    display: none;
+  }
+  footer #lg {
+    order: 2;
+  }
+  footer .container a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  footer .item a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  select {
+    width: 150px;
+    padding: 5px 20px 5px 4px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #B11313;
+    color: #ffffff;
+  }
+  footer .footer-icone {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin: 100px 0px 15px 0px;
+  }
+  footer .footer-icone img {
+    background: #B11313;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 15px;
+  }

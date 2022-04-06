@@ -1,0 +1,404 @@
+@charset "UTF-8";
+/**reset et propriétés de base**/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: Marvel;
+  src: url(../../Assets/font/Far-From\ Homecoming\ Updated.otf);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: Marvel;
+}
+
+/**fin reset**/
+/**variables pour les couleurs**/
+/**fin variables couleurs**/
+/*en-tête mobile*/
+header {
+  position: relative;
+  height: 45vh;
+  background-image: url(../Assets/Illustration/img1.png);
+  background-size: cover;
+}
+header .top-bar-parent {
+  display: none;
+}
+header .logo-mobile {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+header .titre {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-30%);
+}
+header .titre {
+  font-weight: bold;
+}
+header .titre h1 {
+  font-size: 32px;
+  margin-bottom: 7px;
+}
+header .titre p {
+  font-size: 16px;
+}
+header .titre .para2 {
+  display: none;
+}
+header .titre button {
+  margin-top: 30px;
+  padding: 0.8em 1.2em;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: inherit;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+header .titre button:hover {
+  background-color: #ffffff;
+  color: #B11313;
+}
+header .titre button.buttonBlanc {
+  background-color: #ffffff;
+  color: #B11313;
+  margin-right: 1em;
+}
+header .titre button.buttonBlanc:hover {
+  background-color: inherit;
+  color: #ffffff;
+}
+
+main .section1 .personnages button {
+  padding: 0.8em 1.2em;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #B11313;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+main .section1 .personnages button:hover {
+  background-color: inherit;
+  color: #ffffff;
+}
+
+/*fin en-tête mobile*/
+/*en-tête desktop*/
+@media screen and (min-width: 900px) {
+  header {
+    height: 75vh;
+  }
+  header .logo-mobile {
+    display: none;
+  }
+  header .top-bar-parent {
+    display: block;
+  }
+  header .top-bar {
+    background-color: #B11313;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+  }
+  header .top-bar .logo-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+  header .top-bar nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform: capitalize;
+  }
+  header .titre h1 {
+    font-size: 55px;
+  }
+  header .titre p {
+    display: none;
+  }
+  header .titre .para2 {
+    display: block;
+    margin-top: 2em;
+  }
+  header .titre button {
+    border-radius: 13px;
+  }
+}
+/*fin en-tête desktop*/
+/*deput corps de la page mobile*/
+main .section1 {
+  background-color: #B11313;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
+main .section1 h1 {
+  font-size: 37px;
+  font-weight: normal;
+}
+main .section1 .personnages {
+  text-align: justify;
+  margin-top: 3em;
+}
+main .section1 .personnages button {
+  margin-left: 25%;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+main .section1 .personnages .image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 340px;
+  background: url(./../Assets/Illustration/img3.png) center no-repeat;
+}
+main .section1 .personnages .image2 {
+  background: url(./../Assets/Illustration/img2.png) center no-repeat;
+}
+main .section1 .personnages .image3 {
+  background: url(./../Assets/Illustration/img4.png) center no-repeat;
+}
+
+.section2{
+  background-color: #114C92;
+  height: 560px;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.formulaire{
+  margin-top: 80px;
+  margin-right: 200px;
+}
+
+.formulaire  h2{
+  margin-left: 80px;
+  font-family: 'Spider';
+}
+
+.formulaire p{
+  margin-top: 15px;
+  margin-left: -50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formulaire form input{
+  border: none;
+  padding: 8px 180px 8px 20px;
+  display: block;
+  margin: 15px 0;
+  border-radius: 30px;
+}
+
+.formulaire #envoyer{
+  background-color: inherit;
+  padding: 15px 50px;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  font-weight: bold;
+  margin: 30px 100px;
+}
+
+.section3{
+  background-color: #B11313;
+  display: flex;
+  color: #FFFFFF;
+  justify-content: space-between;
+}
+
+.texte{
+ position: relative;
+ top: 150px;
+ left: 200px;
+}
+
+.nouveauté h2{
+  font-family: 'Spider';
+}
+
+.noveauté p{
+  margin: 20px 0 80px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form input{
+  display: block;
+  padding: 5px 150px 5px 15px;
+  border-radius: 30px;
+  border: 2px solid #FFFFFF;
+  background-color: inherit;
+  margin: 25px 0;
+}
+
+.form input::placeholder{
+  color: #FFFFFF;
+}
+
+.caseàcocher{
+  display: flex;
+}
+
+.caseàcocher p{
+  margin-left: 15px;
+  margin-top: -2px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.caseàcocher a{
+  color: #FFFFFF;
+}
+
+#inscrire{
+  color: #B11313;
+  padding: 14px 25px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  font-weight: bold;
+  border: none;
+  margin: 30px 80px;
+}
+
+/*fin corps de la page mobile*/
+/*corps de la page desktop*/
+@media screen and (min-width: 1000px) {
+  main .section1 {
+    background-color: #B11313;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+  }
+  main .personnages {
+    display: flex;
+    gap: 3em;
+  }
+}
+  
+/*fin corps de la page desktop*/
+/*debut pied de page mobile*/
+footer {
+  background: #000;
+}
+footer .partie1 {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .partie1 .list a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5em;
+}
+footer .partie1 .list .logs-desktop {
+  display: none;
+}
+footer .partie1 .list .select-desktop {
+  display: none;
+}
+footer .partie1 select {
+  align-self: flex-start;
+  margin-top: 13px;
+  width: 100px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #B11313;
+  border: none;
+  border-radius: 30px;
+}
+footer .partie2 {
+  margin-top: 2em;
+}
+footer .partie2 .logs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+footer .partie2 .socialLogs {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+}
+footer .partie2 .socialLogs .social {
+  width: 45px;
+  height: 45px;
+  background: url(./../Assets/Logo/logof.png) #B11313 no-repeat center;
+  border-radius: 50%;
+}
+footer .partie2 .socialLogs .social2 {
+  background-image: url(./../Assets/Logo/logoi.png);
+}
+footer .partie2 .socialLogs .social3 {
+  background-image: url(./../Assets/Logo/logoy.png);
+}
+footer .partie2 .socialLogs .social4 {
+  background-image: url(./../Assets/Logo/logot.png);
+}
+footer .partie2 p {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+/*fin pied de page mobile*/
+/* pied de page desktop */
+@media screen and (min-width: 990px) {
+  footer .partie1 select#Langue-mobile {
+    display: none;
+  }
+  footer .partie1 .list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5em;
+  }
+  footer .partie1 select {
+    width: 170px;
+  }
+  footer .partie1 .list a {
+    display: inline;
+  }
+  footer .partie1 .list .select-desktop {
+    display: block;
+  }
+  footer .partie1 .list .logs-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  footer .partie2 .logs {
+    display: none;
+  }
+}
+/* fin pied de page desktop */
+
+/*# sourceMappingURL=style.css.map */
